@@ -469,7 +469,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><div class="memdoc">
 
 <p>setup sensor with given parameters / settings </p>
-<p>This is simply a overload to the normal <a class="el" href="class_adafruit___b_m_e280.html#a94f8cc82e56f44f5e75fb425d1cdf939" title="Initialise sensor with given parameters / settings. ">begin()</a>-function, so SPI users don't get confused about the library requiring an address. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>the power mode to use for the sensor </td></tr>
     <tr><td class="paramname">tempSampling</td><td>the temp samping rate to use </td></tr>
@@ -521,7 +521,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><div class="memdoc">
 
 <p>Returns the temperature from the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the temperature read from the device </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the temperature read from the device or NaN if sampling off </dd></dl>
 
 </div>
 </div>
@@ -542,7 +542,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><div class="memdoc">
 
 <p>Returns the pressure from the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the pressure value (in Pascal) read from the device </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the pressure value (in Pascal) or NaN if sampling off </dd></dl>
 
 </div>
 </div>
@@ -563,7 +563,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><div class="memdoc">
 
 <p>Returns the humidity from the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the humidity value read from the device </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the humidity value read from the device or NaN if sampling off </dd></dl>
 
 </div>
 </div>
